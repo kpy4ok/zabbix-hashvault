@@ -56,30 +56,30 @@
                 <item>
                     <name>Hashrate: Current</name>
                     <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
+                    <snmp_community></snmp_community>
+                    <snmp_oid></snmp_oid>
                     <key>hashvault[{$WALLET_ADDRESS},collective.hashRate]</key>
                     <delay>60s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
                     <value_type>3</value_type>
-                    <allowed_hosts/>
+                    <allowed_hosts></allowed_hosts>
                     <units>H/s</units>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
+                    <snmpv3_contextname></snmpv3_contextname>
+                    <snmpv3_securityname></snmpv3_securityname>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
+                    <snmpv3_authpassphrase></snmpv3_authpassphrase>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
+                    <snmpv3_privpassphrase></snmpv3_privpassphrase>
+                    <params></params>
+                    <ipmi_sensor></ipmi_sensor>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
+                    <username></username>
+                    <password></password>
+                    <publickey></publickey>
+                    <privatekey></privatekey>
                     <description>Hashrate: Current</description>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -87,56 +87,56 @@
                             <name>HashVault: Hashrate</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
+                    <valuemap></valuemap>
+                    <logtimefmt></logtimefmt>
+                    <preprocessing></preprocessing>
+                    <jmx_endpoint></jmx_endpoint>
                     <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
+                    <url></url>
+                    <query_fields></query_fields>
+                    <posts></posts>
                     <status_codes>200</status_codes>
                     <follow_redirects>1</follow_redirects>
                     <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
+                    <http_proxy></http_proxy>
+                    <headers></headers>
                     <retrieve_mode>0</retrieve_mode>
                     <request_method>0</request_method>
                     <output_format>0</output_format>
                     <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
+                    <ssl_cert_file></ssl_cert_file>
+                    <ssl_key_file></ssl_key_file>
+                    <ssl_key_password></ssl_key_password>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                 </item>
                 <item>
                     <name>Hashrate: 1h Average</name>
                     <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
+                    <snmp_community></snmp_community>
+                    <snmp_oid></snmp_oid>
                     <key>hashvault[{$WALLET_ADDRESS},collective.avg1hashRate]</key>
                     <delay>60s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
                     <value_type>3</value_type>
-                    <allowed_hosts/>
+                    <allowed_hosts></allowed_hosts>
                     <units>H/s</units>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
+                    <snmpv3_contextname></snmpv3_contextname>
+                    <snmpv3_securityname></snmpv3_securityname>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
+                    <snmpv3_authpassphrase></snmpv3_authpassphrase>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
+                    <snmpv3_privpassphrase></snmpv3_privpassphrase>
+                    <params></params>
+                    <ipmi_sensor></ipmi_sensor>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
+                    <username></username>
+                    <password></password>
+                    <publickey></publickey>
+                    <privatekey></privatekey>
                     <description>Hashrate: 1h Average</description>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -144,56 +144,56 @@
                             <name>HashVault: Hashrate</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
+                    <valuemap></valuemap>
+                    <logtimefmt></logtimefmt>
+                    <preprocessing></preprocessing>
+                    <jmx_endpoint></jmx_endpoint>
                     <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
+                    <url></url>
+                    <query_fields></query_fields>
+                    <posts></posts>
                     <status_codes>200</status_codes>
                     <follow_redirects>1</follow_redirects>
                     <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
+                    <http_proxy></http_proxy>
+                    <headers></headers>
                     <retrieve_mode>0</retrieve_mode>
                     <request_method>0</request_method>
                     <output_format>0</output_format>
                     <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
+                    <ssl_cert_file></ssl_cert_file>
+                    <ssl_key_file></ssl_key_file>
+                    <ssl_key_password></ssl_key_password>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                 </item>
                 <item>
                     <name>Hashrate: 3h Average</name>
                     <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
+                    <snmp_community></snmp_community>
+                    <snmp_oid></snmp_oid>
                     <key>hashvault[{$WALLET_ADDRESS},collective.avg3hashRate]</key>
                     <delay>60s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
                     <value_type>3</value_type>
-                    <allowed_hosts/>
+                    <allowed_hosts></allowed_hosts>
                     <units>H/s</units>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
+                    <snmpv3_contextname></snmpv3_contextname>
+                    <snmpv3_securityname></snmpv3_securityname>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
+                    <snmpv3_authpassphrase></snmpv3_authpassphrase>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
+                    <snmpv3_privpassphrase></snmpv3_privpassphrase>
+                    <params></params>
+                    <ipmi_sensor></ipmi_sensor>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
+                    <username></username>
+                    <password></password>
+                    <publickey></publickey>
+                    <privatekey></privatekey>
                     <description>Hashrate: 3h Average</description>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -201,56 +201,56 @@
                             <name>HashVault: Hashrate</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
+                    <valuemap></valuemap>
+                    <logtimefmt></logtimefmt>
+                    <preprocessing></preprocessing>
+                    <jmx_endpoint></jmx_endpoint>
                     <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
+                    <url></url>
+                    <query_fields></query_fields>
+                    <posts></posts>
                     <status_codes>200</status_codes>
                     <follow_redirects>1</follow_redirects>
                     <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
+                    <http_proxy></http_proxy>
+                    <headers></headers>
                     <retrieve_mode>0</retrieve_mode>
                     <request_method>0</request_method>
                     <output_format>0</output_format>
                     <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
+                    <ssl_cert_file></ssl_cert_file>
+                    <ssl_key_file></ssl_key_file>
+                    <ssl_key_password></ssl_key_password>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                 </item>
                 <item>
                     <name>Hashrate: 6h Average</name>
                     <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
+                    <snmp_community></snmp_community>
+                    <snmp_oid></snmp_oid>
                     <key>hashvault[{$WALLET_ADDRESS},collective.avg6hashRate]</key>
                     <delay>60s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
                     <value_type>3</value_type>
-                    <allowed_hosts/>
+                    <allowed_hosts></allowed_hosts>
                     <units>H/s</units>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
+                    <snmpv3_contextname></snmpv3_contextname>
+                    <snmpv3_securityname></snmpv3_securityname>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
+                    <snmpv3_authpassphrase></snmpv3_authpassphrase>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
+                    <snmpv3_privpassphrase></snmpv3_privpassphrase>
+                    <params></params>
+                    <ipmi_sensor></ipmi_sensor>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
+                    <username></username>
+                    <password></password>
+                    <publickey></publickey>
+                    <privatekey></privatekey>
                     <description>Hashrate: 6h Average</description>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -258,56 +258,56 @@
                             <name>HashVault: Hashrate</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
+                    <valuemap></valuemap>
+                    <logtimefmt></logtimefmt>
+                    <preprocessing></preprocessing>
+                    <jmx_endpoint></jmx_endpoint>
                     <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
+                    <url></url>
+                    <query_fields></query_fields>
+                    <posts></posts>
                     <status_codes>200</status_codes>
                     <follow_redirects>1</follow_redirects>
                     <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
+                    <http_proxy></http_proxy>
+                    <headers></headers>
                     <retrieve_mode>0</retrieve_mode>
                     <request_method>0</request_method>
                     <output_format>0</output_format>
                     <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
+                    <ssl_cert_file></ssl_cert_file>
+                    <ssl_key_file></ssl_key_file>
+                    <ssl_key_password></ssl_key_password>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                 </item>
                 <item>
                     <name>Hashrate: 24h Average</name>
                     <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
+                    <snmp_community></snmp_community>
+                    <snmp_oid></snmp_oid>
                     <key>hashvault[{$WALLET_ADDRESS},collective.avg24hashRate]</key>
                     <delay>60s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
                     <value_type>3</value_type>
-                    <allowed_hosts/>
+                    <allowed_hosts></allowed_hosts>
                     <units>H/s</units>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
+                    <snmpv3_contextname></snmpv3_contextname>
+                    <snmpv3_securityname></snmpv3_securityname>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
+                    <snmpv3_authpassphrase></snmpv3_authpassphrase>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
+                    <snmpv3_privpassphrase></snmpv3_privpassphrase>
+                    <params></params>
+                    <ipmi_sensor></ipmi_sensor>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
+                    <username></username>
+                    <password></password>
+                    <publickey></publickey>
+                    <privatekey></privatekey>
                     <description>Hashrate: 24h Average</description>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -315,56 +315,56 @@
                             <name>HashVault: Hashrate</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
+                    <valuemap></valuemap>
+                    <logtimefmt></logtimefmt>
+                    <preprocessing></preprocessing>
+                    <jmx_endpoint></jmx_endpoint>
                     <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
+                    <url></url>
+                    <query_fields></query_fields>
+                    <posts></posts>
                     <status_codes>200</status_codes>
                     <follow_redirects>1</follow_redirects>
                     <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
+                    <http_proxy></http_proxy>
+                    <headers></headers>
                     <retrieve_mode>0</retrieve_mode>
                     <request_method>0</request_method>
                     <output_format>0</output_format>
                     <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
+                    <ssl_cert_file></ssl_cert_file>
+                    <ssl_key_file></ssl_key_file>
+                    <ssl_key_password></ssl_key_password>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                 </item>
                 <item>
                     <name>Shares: Valid</name>
                     <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
+                    <snmp_community></snmp_community>
+                    <snmp_oid></snmp_oid>
                     <key>hashvault[{$WALLET_ADDRESS},collective.validShares]</key>
                     <delay>300s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
                     <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
+                    <allowed_hosts></allowed_hosts>
+                    <units></units>
+                    <snmpv3_contextname></snmpv3_contextname>
+                    <snmpv3_securityname></snmpv3_securityname>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
+                    <snmpv3_authpassphrase></snmpv3_authpassphrase>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
+                    <snmpv3_privpassphrase></snmpv3_privpassphrase>
+                    <params></params>
+                    <ipmi_sensor></ipmi_sensor>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
+                    <username></username>
+                    <password></password>
+                    <publickey></publickey>
+                    <privatekey></privatekey>
                     <description>Shares: Valid</description>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -372,56 +372,56 @@
                             <name>HashVault: Shares</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
+                    <valuemap></valuemap>
+                    <logtimefmt></logtimefmt>
+                    <preprocessing></preprocessing>
+                    <jmx_endpoint></jmx_endpoint>
                     <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
+                    <url></url>
+                    <query_fields></query_fields>
+                    <posts></posts>
                     <status_codes>200</status_codes>
                     <follow_redirects>1</follow_redirects>
                     <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
+                    <http_proxy></http_proxy>
+                    <headers></headers>
                     <retrieve_mode>0</retrieve_mode>
                     <request_method>0</request_method>
                     <output_format>0</output_format>
                     <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
+                    <ssl_cert_file></ssl_cert_file>
+                    <ssl_key_file></ssl_key_file>
+                    <ssl_key_password></ssl_key_password>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                 </item>
                 <item>
                     <name>Shares: Invalid</name>
                     <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
+                    <snmp_community></snmp_community>
+                    <snmp_oid></snmp_oid>
                     <key>hashvault[{$WALLET_ADDRESS},collective.invalidShares]</key>
                     <delay>300s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
                     <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
+                    <allowed_hosts></allowed_hosts>
+                    <units></units>
+                    <snmpv3_contextname></snmpv3_contextname>
+                    <snmpv3_securityname></snmpv3_securityname>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
+                    <snmpv3_authpassphrase></snmpv3_authpassphrase>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
+                    <snmpv3_privpassphrase></snmpv3_privpassphrase>
+                    <params></params>
+                    <ipmi_sensor></ipmi_sensor>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
+                    <username></username>
+                    <password></password>
+                    <publickey></publickey>
+                    <privatekey></privatekey>
                     <description>Shares: Invalid</description>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -429,56 +429,56 @@
                             <name>HashVault: Shares</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
+                    <valuemap></valuemap>
+                    <logtimefmt></logtimefmt>
+                    <preprocessing></preprocessing>
+                    <jmx_endpoint></jmx_endpoint>
                     <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
+                    <url></url>
+                    <query_fields></query_fields>
+                    <posts></posts>
                     <status_codes>200</status_codes>
                     <follow_redirects>1</follow_redirects>
                     <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
+                    <http_proxy></http_proxy>
+                    <headers></headers>
                     <retrieve_mode>0</retrieve_mode>
                     <request_method>0</request_method>
                     <output_format>0</output_format>
                     <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
+                    <ssl_cert_file></ssl_cert_file>
+                    <ssl_key_file></ssl_key_file>
+                    <ssl_key_password></ssl_key_password>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                 </item>
                 <item>
                     <name>Shares: Stale</name>
                     <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
+                    <snmp_community></snmp_community>
+                    <snmp_oid></snmp_oid>
                     <key>hashvault[{$WALLET_ADDRESS},collective.staleShares]</key>
                     <delay>300s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
                     <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
+                    <allowed_hosts></allowed_hosts>
+                    <units></units>
+                    <snmpv3_contextname></snmpv3_contextname>
+                    <snmpv3_securityname></snmpv3_securityname>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
+                    <snmpv3_authpassphrase></snmpv3_authpassphrase>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
+                    <snmpv3_privpassphrase></snmpv3_privpassphrase>
+                    <params></params>
+                    <ipmi_sensor></ipmi_sensor>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
+                    <username></username>
+                    <password></password>
+                    <publickey></publickey>
+                    <privatekey></privatekey>
                     <description>Shares: Stale</description>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -486,56 +486,56 @@
                             <name>HashVault: Shares</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
+                    <valuemap></valuemap>
+                    <logtimefmt></logtimefmt>
+                    <preprocessing></preprocessing>
+                    <jmx_endpoint></jmx_endpoint>
                     <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
+                    <url></url>
+                    <query_fields></query_fields>
+                    <posts></posts>
                     <status_codes>200</status_codes>
                     <follow_redirects>1</follow_redirects>
                     <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
+                    <http_proxy></http_proxy>
+                    <headers></headers>
                     <retrieve_mode>0</retrieve_mode>
                     <request_method>0</request_method>
                     <output_format>0</output_format>
                     <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
+                    <ssl_cert_file></ssl_cert_file>
+                    <ssl_key_file></ssl_key_file>
+                    <ssl_key_password></ssl_key_password>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                 </item>
                 <item>
                     <name>Shares: Stale Percentage</name>
                     <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
+                    <snmp_community></snmp_community>
+                    <snmp_oid></snmp_oid>
                     <key>hashvault[{$WALLET_ADDRESS},collective.staleSharesPct]</key>
                     <delay>300s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
                     <value_type>0</value_type>
-                    <allowed_hosts/>
+                    <allowed_hosts></allowed_hosts>
                     <units>%</units>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
+                    <snmpv3_contextname></snmpv3_contextname>
+                    <snmpv3_securityname></snmpv3_securityname>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
+                    <snmpv3_authpassphrase></snmpv3_authpassphrase>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
+                    <snmpv3_privpassphrase></snmpv3_privpassphrase>
+                    <params></params>
+                    <ipmi_sensor></ipmi_sensor>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
+                    <username></username>
+                    <password></password>
+                    <publickey></publickey>
+                    <privatekey></privatekey>
                     <description>Shares: Stale Percentage</description>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -543,56 +543,56 @@
                             <name>HashVault: Shares</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
+                    <valuemap></valuemap>
+                    <logtimefmt></logtimefmt>
+                    <preprocessing></preprocessing>
+                    <jmx_endpoint></jmx_endpoint>
                     <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
+                    <url></url>
+                    <query_fields></query_fields>
+                    <posts></posts>
                     <status_codes>200</status_codes>
                     <follow_redirects>1</follow_redirects>
                     <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
+                    <http_proxy></http_proxy>
+                    <headers></headers>
                     <retrieve_mode>0</retrieve_mode>
                     <request_method>0</request_method>
                     <output_format>0</output_format>
                     <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
+                    <ssl_cert_file></ssl_cert_file>
+                    <ssl_key_file></ssl_key_file>
+                    <ssl_key_password></ssl_key_password>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                 </item>
                 <item>
                     <name>Shares: Rate (per 30s)</name>
                     <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
+                    <snmp_community></snmp_community>
+                    <snmp_oid></snmp_oid>
                     <key>hashvault[{$WALLET_ADDRESS},collective.shareRate]</key>
                     <delay>60s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
                     <value_type>0</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
+                    <allowed_hosts></allowed_hosts>
+                    <units></units>
+                    <snmpv3_contextname></snmpv3_contextname>
+                    <snmpv3_securityname></snmpv3_securityname>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
+                    <snmpv3_authpassphrase></snmpv3_authpassphrase>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
+                    <snmpv3_privpassphrase></snmpv3_privpassphrase>
+                    <params></params>
+                    <ipmi_sensor></ipmi_sensor>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
+                    <username></username>
+                    <password></password>
+                    <publickey></publickey>
+                    <privatekey></privatekey>
                     <description>Shares: Rate (per 30s)</description>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -600,56 +600,56 @@
                             <name>HashVault: Shares</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
+                    <valuemap></valuemap>
+                    <logtimefmt></logtimefmt>
+                    <preprocessing></preprocessing>
+                    <jmx_endpoint></jmx_endpoint>
                     <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
+                    <url></url>
+                    <query_fields></query_fields>
+                    <posts></posts>
                     <status_codes>200</status_codes>
                     <follow_redirects>1</follow_redirects>
                     <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
+                    <http_proxy></http_proxy>
+                    <headers></headers>
                     <retrieve_mode>0</retrieve_mode>
                     <request_method>0</request_method>
                     <output_format>0</output_format>
                     <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
+                    <ssl_cert_file></ssl_cert_file>
+                    <ssl_key_file></ssl_key_file>
+                    <ssl_key_password></ssl_key_password>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                 </item>
                 <item>
                     <name>Last Share Timestamp</name>
                     <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
+                    <snmp_community></snmp_community>
+                    <snmp_oid></snmp_oid>
                     <key>hashvault[{$WALLET_ADDRESS},collective.lastShare]</key>
                     <delay>60s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
                     <value_type>3</value_type>
-                    <allowed_hosts/>
+                    <allowed_hosts></allowed_hosts>
                     <units>unixtime</units>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
+                    <snmpv3_contextname></snmpv3_contextname>
+                    <snmpv3_securityname></snmpv3_securityname>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
+                    <snmpv3_authpassphrase></snmpv3_authpassphrase>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
+                    <snmpv3_privpassphrase></snmpv3_privpassphrase>
+                    <params></params>
+                    <ipmi_sensor></ipmi_sensor>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
+                    <username></username>
+                    <password></password>
+                    <publickey></publickey>
+                    <privatekey></privatekey>
                     <description>Last Share Timestamp</description>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -657,56 +657,56 @@
                             <name>HashVault: Shares</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
+                    <valuemap></valuemap>
+                    <logtimefmt></logtimefmt>
+                    <preprocessing></preprocessing>
+                    <jmx_endpoint></jmx_endpoint>
                     <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
+                    <url></url>
+                    <query_fields></query_fields>
+                    <posts></posts>
                     <status_codes>200</status_codes>
                     <follow_redirects>1</follow_redirects>
                     <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
+                    <http_proxy></http_proxy>
+                    <headers></headers>
                     <retrieve_mode>0</retrieve_mode>
                     <request_method>0</request_method>
                     <output_format>0</output_format>
                     <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
+                    <ssl_cert_file></ssl_cert_file>
+                    <ssl_key_file></ssl_key_file>
+                    <ssl_key_password></ssl_key_password>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                 </item>
                 <item>
                     <name>Round Hashes</name>
                     <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
+                    <snmp_community></snmp_community>
+                    <snmp_oid></snmp_oid>
                     <key>hashvault[{$WALLET_ADDRESS},collective.roundHashes]</key>
                     <delay>300s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
                     <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
+                    <allowed_hosts></allowed_hosts>
+                    <units></units>
+                    <snmpv3_contextname></snmpv3_contextname>
+                    <snmpv3_securityname></snmpv3_securityname>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
+                    <snmpv3_authpassphrase></snmpv3_authpassphrase>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
+                    <snmpv3_privpassphrase></snmpv3_privpassphrase>
+                    <params></params>
+                    <ipmi_sensor></ipmi_sensor>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
+                    <username></username>
+                    <password></password>
+                    <publickey></publickey>
+                    <privatekey></privatekey>
                     <description>Round Hashes</description>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -714,56 +714,56 @@
                             <name>HashVault: Mining</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
+                    <valuemap></valuemap>
+                    <logtimefmt></logtimefmt>
+                    <preprocessing></preprocessing>
+                    <jmx_endpoint></jmx_endpoint>
                     <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
+                    <url></url>
+                    <query_fields></query_fields>
+                    <posts></posts>
                     <status_codes>200</status_codes>
                     <follow_redirects>1</follow_redirects>
                     <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
+                    <http_proxy></http_proxy>
+                    <headers></headers>
                     <retrieve_mode>0</retrieve_mode>
                     <request_method>0</request_method>
                     <output_format>0</output_format>
                     <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
+                    <ssl_cert_file></ssl_cert_file>
+                    <ssl_key_file></ssl_key_file>
+                    <ssl_key_password></ssl_key_password>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                 </item>
                 <item>
                     <name>Total Hashes</name>
                     <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
+                    <snmp_community></snmp_community>
+                    <snmp_oid></snmp_oid>
                     <key>hashvault[{$WALLET_ADDRESS},collective.totalHashes]</key>
                     <delay>300s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
                     <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
+                    <allowed_hosts></allowed_hosts>
+                    <units></units>
+                    <snmpv3_contextname></snmpv3_contextname>
+                    <snmpv3_securityname></snmpv3_securityname>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
+                    <snmpv3_authpassphrase></snmpv3_authpassphrase>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
+                    <snmpv3_privpassphrase></snmpv3_privpassphrase>
+                    <params></params>
+                    <ipmi_sensor></ipmi_sensor>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
+                    <username></username>
+                    <password></password>
+                    <publickey></publickey>
+                    <privatekey></privatekey>
                     <description>Total Hashes</description>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -771,56 +771,56 @@
                             <name>HashVault: Mining</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
+                    <valuemap></valuemap>
+                    <logtimefmt></logtimefmt>
+                    <preprocessing></preprocessing>
+                    <jmx_endpoint></jmx_endpoint>
                     <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
+                    <url></url>
+                    <query_fields></query_fields>
+                    <posts></posts>
                     <status_codes>200</status_codes>
                     <follow_redirects>1</follow_redirects>
                     <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
+                    <http_proxy></http_proxy>
+                    <headers></headers>
                     <retrieve_mode>0</retrieve_mode>
                     <request_method>0</request_method>
                     <output_format>0</output_format>
                     <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
+                    <ssl_cert_file></ssl_cert_file>
+                    <ssl_key_file></ssl_key_file>
+                    <ssl_key_password></ssl_key_password>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                 </item>
                 <item>
                     <name>Blocks Found</name>
                     <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
+                    <snmp_community></snmp_community>
+                    <snmp_oid></snmp_oid>
                     <key>hashvault[{$WALLET_ADDRESS},collective.foundBlocks]</key>
                     <delay>300s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
                     <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
+                    <allowed_hosts></allowed_hosts>
+                    <units></units>
+                    <snmpv3_contextname></snmpv3_contextname>
+                    <snmpv3_securityname></snmpv3_securityname>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
+                    <snmpv3_authpassphrase></snmpv3_authpassphrase>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
+                    <snmpv3_privpassphrase></snmpv3_privpassphrase>
+                    <params></params>
+                    <ipmi_sensor></ipmi_sensor>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
+                    <username></username>
+                    <password></password>
+                    <publickey></publickey>
+                    <privatekey></privatekey>
                     <description>Blocks Found</description>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -828,56 +828,56 @@
                             <name>HashVault: Mining</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
+                    <valuemap></valuemap>
+                    <logtimefmt></logtimefmt>
+                    <preprocessing></preprocessing>
+                    <jmx_endpoint></jmx_endpoint>
                     <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
+                    <url></url>
+                    <query_fields></query_fields>
+                    <posts></posts>
                     <status_codes>200</status_codes>
                     <follow_redirects>1</follow_redirects>
                     <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
+                    <http_proxy></http_proxy>
+                    <headers></headers>
                     <retrieve_mode>0</retrieve_mode>
                     <request_method>0</request_method>
                     <output_format>0</output_format>
                     <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
+                    <ssl_cert_file></ssl_cert_file>
+                    <ssl_key_file></ssl_key_file>
+                    <ssl_key_password></ssl_key_password>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                 </item>
                 <item>
                     <name>Current Effort</name>
                     <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
+                    <snmp_community></snmp_community>
+                    <snmp_oid></snmp_oid>
                     <key>hashvault[{$WALLET_ADDRESS},collective.currentEffort]</key>
                     <delay>60s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
                     <value_type>0</value_type>
-                    <allowed_hosts/>
+                    <allowed_hosts></allowed_hosts>
                     <units>%</units>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
+                    <snmpv3_contextname></snmpv3_contextname>
+                    <snmpv3_securityname></snmpv3_securityname>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
+                    <snmpv3_authpassphrase></snmpv3_authpassphrase>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
+                    <snmpv3_privpassphrase></snmpv3_privpassphrase>
+                    <params></params>
+                    <ipmi_sensor></ipmi_sensor>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
+                    <username></username>
+                    <password></password>
+                    <publickey></publickey>
+                    <privatekey></privatekey>
                     <description>Current Effort</description>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -885,56 +885,56 @@
                             <name>HashVault: Mining</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
+                    <valuemap></valuemap>
+                    <logtimefmt></logtimefmt>
+                    <preprocessing></preprocessing>
+                    <jmx_endpoint></jmx_endpoint>
                     <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
+                    <url></url>
+                    <query_fields></query_fields>
+                    <posts></posts>
                     <status_codes>200</status_codes>
                     <follow_redirects>1</follow_redirects>
                     <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
+                    <http_proxy></http_proxy>
+                    <headers></headers>
                     <retrieve_mode>0</retrieve_mode>
                     <request_method>0</request_method>
                     <output_format>0</output_format>
                     <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
+                    <ssl_cert_file></ssl_cert_file>
+                    <ssl_key_file></ssl_key_file>
+                    <ssl_key_password></ssl_key_password>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                 </item>
                 <item>
                     <name>Balance: Confirmed (XMR)</name>
                     <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
+                    <snmp_community></snmp_community>
+                    <snmp_oid></snmp_oid>
                     <key>hashvault[{$WALLET_ADDRESS},revenue.confirmedBalanceXMR]</key>
                     <delay>300s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
                     <value_type>0</value_type>
-                    <allowed_hosts/>
+                    <allowed_hosts></allowed_hosts>
                     <units>XMR</units>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
+                    <snmpv3_contextname></snmpv3_contextname>
+                    <snmpv3_securityname></snmpv3_securityname>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
+                    <snmpv3_authpassphrase></snmpv3_authpassphrase>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
+                    <snmpv3_privpassphrase></snmpv3_privpassphrase>
+                    <params></params>
+                    <ipmi_sensor></ipmi_sensor>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
+                    <username></username>
+                    <password></password>
+                    <publickey></publickey>
+                    <privatekey></privatekey>
                     <description>Balance: Confirmed (XMR)</description>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -942,56 +942,56 @@
                             <name>HashVault: Revenue</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
+                    <valuemap></valuemap>
+                    <logtimefmt></logtimefmt>
+                    <preprocessing></preprocessing>
+                    <jmx_endpoint></jmx_endpoint>
                     <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
+                    <url></url>
+                    <query_fields></query_fields>
+                    <posts></posts>
                     <status_codes>200</status_codes>
                     <follow_redirects>1</follow_redirects>
                     <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
+                    <http_proxy></http_proxy>
+                    <headers></headers>
                     <retrieve_mode>0</retrieve_mode>
                     <request_method>0</request_method>
                     <output_format>0</output_format>
                     <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
+                    <ssl_cert_file></ssl_cert_file>
+                    <ssl_key_file></ssl_key_file>
+                    <ssl_key_password></ssl_key_password>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                 </item>
                 <item>
                     <name>Balance: Confirmed (atomic)</name>
                     <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
+                    <snmp_community></snmp_community>
+                    <snmp_oid></snmp_oid>
                     <key>hashvault[{$WALLET_ADDRESS},revenue.confirmedBalance]</key>
                     <delay>300s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
                     <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
+                    <allowed_hosts></allowed_hosts>
+                    <units></units>
+                    <snmpv3_contextname></snmpv3_contextname>
+                    <snmpv3_securityname></snmpv3_securityname>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
+                    <snmpv3_authpassphrase></snmpv3_authpassphrase>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
+                    <snmpv3_privpassphrase></snmpv3_privpassphrase>
+                    <params></params>
+                    <ipmi_sensor></ipmi_sensor>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
+                    <username></username>
+                    <password></password>
+                    <publickey></publickey>
+                    <privatekey></privatekey>
                     <description>Balance: Confirmed (atomic)</description>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -999,56 +999,56 @@
                             <name>HashVault: Revenue</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
+                    <valuemap></valuemap>
+                    <logtimefmt></logtimefmt>
+                    <preprocessing></preprocessing>
+                    <jmx_endpoint></jmx_endpoint>
                     <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
+                    <url></url>
+                    <query_fields></query_fields>
+                    <posts></posts>
                     <status_codes>200</status_codes>
                     <follow_redirects>1</follow_redirects>
                     <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
+                    <http_proxy></http_proxy>
+                    <headers></headers>
                     <retrieve_mode>0</retrieve_mode>
                     <request_method>0</request_method>
                     <output_format>0</output_format>
                     <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
+                    <ssl_cert_file></ssl_cert_file>
+                    <ssl_key_file></ssl_key_file>
+                    <ssl_key_password></ssl_key_password>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                 </item>
                 <item>
                     <name>Balance: Unconfirmed Collective</name>
                     <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
+                    <snmp_community></snmp_community>
+                    <snmp_oid></snmp_oid>
                     <key>hashvault[{$WALLET_ADDRESS},revenue.unconfirmedBalance.collective.total]</key>
                     <delay>300s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
                     <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
+                    <allowed_hosts></allowed_hosts>
+                    <units></units>
+                    <snmpv3_contextname></snmpv3_contextname>
+                    <snmpv3_securityname></snmpv3_securityname>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
+                    <snmpv3_authpassphrase></snmpv3_authpassphrase>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
+                    <snmpv3_privpassphrase></snmpv3_privpassphrase>
+                    <params></params>
+                    <ipmi_sensor></ipmi_sensor>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
+                    <username></username>
+                    <password></password>
+                    <publickey></publickey>
+                    <privatekey></privatekey>
                     <description>Balance: Unconfirmed Collective</description>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -1056,56 +1056,56 @@
                             <name>HashVault: Revenue</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
+                    <valuemap></valuemap>
+                    <logtimefmt></logtimefmt>
+                    <preprocessing></preprocessing>
+                    <jmx_endpoint></jmx_endpoint>
                     <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
+                    <url></url>
+                    <query_fields></query_fields>
+                    <posts></posts>
                     <status_codes>200</status_codes>
                     <follow_redirects>1</follow_redirects>
                     <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
+                    <http_proxy></http_proxy>
+                    <headers></headers>
                     <retrieve_mode>0</retrieve_mode>
                     <request_method>0</request_method>
                     <output_format>0</output_format>
                     <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
+                    <ssl_cert_file></ssl_cert_file>
+                    <ssl_key_file></ssl_key_file>
+                    <ssl_key_password></ssl_key_password>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                 </item>
                 <item>
                     <name>Total Paid (XMR)</name>
                     <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
+                    <snmp_community></snmp_community>
+                    <snmp_oid></snmp_oid>
                     <key>hashvault[{$WALLET_ADDRESS},revenue.totalPaidXMR]</key>
                     <delay>3600s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
                     <value_type>0</value_type>
-                    <allowed_hosts/>
+                    <allowed_hosts></allowed_hosts>
                     <units>XMR</units>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
+                    <snmpv3_contextname></snmpv3_contextname>
+                    <snmpv3_securityname></snmpv3_securityname>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
+                    <snmpv3_authpassphrase></snmpv3_authpassphrase>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
+                    <snmpv3_privpassphrase></snmpv3_privpassphrase>
+                    <params></params>
+                    <ipmi_sensor></ipmi_sensor>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
+                    <username></username>
+                    <password></password>
+                    <publickey></publickey>
+                    <privatekey></privatekey>
                     <description>Total Paid (XMR)</description>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -1113,56 +1113,56 @@
                             <name>HashVault: Revenue</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
+                    <valuemap></valuemap>
+                    <logtimefmt></logtimefmt>
+                    <preprocessing></preprocessing>
+                    <jmx_endpoint></jmx_endpoint>
                     <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
+                    <url></url>
+                    <query_fields></query_fields>
+                    <posts></posts>
                     <status_codes>200</status_codes>
                     <follow_redirects>1</follow_redirects>
                     <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
+                    <http_proxy></http_proxy>
+                    <headers></headers>
                     <retrieve_mode>0</retrieve_mode>
                     <request_method>0</request_method>
                     <output_format>0</output_format>
                     <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
+                    <ssl_cert_file></ssl_cert_file>
+                    <ssl_key_file></ssl_key_file>
+                    <ssl_key_password></ssl_key_password>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                 </item>
                 <item>
                     <name>Daily Credited (XMR)</name>
                     <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
+                    <snmp_community></snmp_community>
+                    <snmp_oid></snmp_oid>
                     <key>hashvault[{$WALLET_ADDRESS},revenue.dailyCreditedXMR]</key>
                     <delay>300s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
                     <value_type>0</value_type>
-                    <allowed_hosts/>
+                    <allowed_hosts></allowed_hosts>
                     <units>XMR</units>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
+                    <snmpv3_contextname></snmpv3_contextname>
+                    <snmpv3_securityname></snmpv3_securityname>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
+                    <snmpv3_authpassphrase></snmpv3_authpassphrase>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
+                    <snmpv3_privpassphrase></snmpv3_privpassphrase>
+                    <params></params>
+                    <ipmi_sensor></ipmi_sensor>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
+                    <username></username>
+                    <password></password>
+                    <publickey></publickey>
+                    <privatekey></privatekey>
                     <description>Daily Credited (XMR)</description>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -1170,56 +1170,56 @@
                             <name>HashVault: Revenue</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
+                    <valuemap></valuemap>
+                    <logtimefmt></logtimefmt>
+                    <preprocessing></preprocessing>
+                    <jmx_endpoint></jmx_endpoint>
                     <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
+                    <url></url>
+                    <query_fields></query_fields>
+                    <posts></posts>
                     <status_codes>200</status_codes>
                     <follow_redirects>1</follow_redirects>
                     <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
+                    <http_proxy></http_proxy>
+                    <headers></headers>
                     <retrieve_mode>0</retrieve_mode>
                     <request_method>0</request_method>
                     <output_format>0</output_format>
                     <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
+                    <ssl_cert_file></ssl_cert_file>
+                    <ssl_key_file></ssl_key_file>
+                    <ssl_key_password></ssl_key_password>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                 </item>
                 <item>
                     <name>Payout Threshold (XMR)</name>
                     <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
+                    <snmp_community></snmp_community>
+                    <snmp_oid></snmp_oid>
                     <key>hashvault[{$WALLET_ADDRESS},revenue.payoutThresholdXMR]</key>
                     <delay>3600s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
                     <value_type>0</value_type>
-                    <allowed_hosts/>
+                    <allowed_hosts></allowed_hosts>
                     <units>XMR</units>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
+                    <snmpv3_contextname></snmpv3_contextname>
+                    <snmpv3_securityname></snmpv3_securityname>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
+                    <snmpv3_authpassphrase></snmpv3_authpassphrase>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
+                    <snmpv3_privpassphrase></snmpv3_privpassphrase>
+                    <params></params>
+                    <ipmi_sensor></ipmi_sensor>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
+                    <username></username>
+                    <password></password>
+                    <publickey></publickey>
+                    <privatekey></privatekey>
                     <description>Payout Threshold (XMR)</description>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -1227,56 +1227,56 @@
                             <name>HashVault: Revenue</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
+                    <valuemap></valuemap>
+                    <logtimefmt></logtimefmt>
+                    <preprocessing></preprocessing>
+                    <jmx_endpoint></jmx_endpoint>
                     <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
+                    <url></url>
+                    <query_fields></query_fields>
+                    <posts></posts>
                     <status_codes>200</status_codes>
                     <follow_redirects>1</follow_redirects>
                     <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
+                    <http_proxy></http_proxy>
+                    <headers></headers>
                     <retrieve_mode>0</retrieve_mode>
                     <request_method>0</request_method>
                     <output_format>0</output_format>
                     <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
+                    <ssl_cert_file></ssl_cert_file>
+                    <ssl_key_file></ssl_key_file>
+                    <ssl_key_password></ssl_key_password>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                 </item>
                 <item>
                     <name>Total Payments Sent</name>
                     <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
+                    <snmp_community></snmp_community>
+                    <snmp_oid></snmp_oid>
                     <key>hashvault[{$WALLET_ADDRESS},revenue.totalPaymentsSent]</key>
                     <delay>3600s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
                     <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
+                    <allowed_hosts></allowed_hosts>
+                    <units></units>
+                    <snmpv3_contextname></snmpv3_contextname>
+                    <snmpv3_securityname></snmpv3_securityname>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
+                    <snmpv3_authpassphrase></snmpv3_authpassphrase>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
+                    <snmpv3_privpassphrase></snmpv3_privpassphrase>
+                    <params></params>
+                    <ipmi_sensor></ipmi_sensor>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
+                    <username></username>
+                    <password></password>
+                    <publickey></publickey>
+                    <privatekey></privatekey>
                     <description>Total Payments Sent</description>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -1284,56 +1284,56 @@
                             <name>HashVault: Revenue</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
+                    <valuemap></valuemap>
+                    <logtimefmt></logtimefmt>
+                    <preprocessing></preprocessing>
+                    <jmx_endpoint></jmx_endpoint>
                     <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
+                    <url></url>
+                    <query_fields></query_fields>
+                    <posts></posts>
                     <status_codes>200</status_codes>
                     <follow_redirects>1</follow_redirects>
                     <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
+                    <http_proxy></http_proxy>
+                    <headers></headers>
                     <retrieve_mode>0</retrieve_mode>
                     <request_method>0</request_method>
                     <output_format>0</output_format>
                     <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
+                    <ssl_cert_file></ssl_cert_file>
+                    <ssl_key_file></ssl_key_file>
+                    <ssl_key_password></ssl_key_password>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                 </item>
                 <item>
                     <name>Total Rewards Credited</name>
                     <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
+                    <snmp_community></snmp_community>
+                    <snmp_oid></snmp_oid>
                     <key>hashvault[{$WALLET_ADDRESS},revenue.totalRewardsCredited]</key>
                     <delay>3600s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
                     <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
+                    <allowed_hosts></allowed_hosts>
+                    <units></units>
+                    <snmpv3_contextname></snmpv3_contextname>
+                    <snmpv3_securityname></snmpv3_securityname>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
+                    <snmpv3_authpassphrase></snmpv3_authpassphrase>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
+                    <snmpv3_privpassphrase></snmpv3_privpassphrase>
+                    <params></params>
+                    <ipmi_sensor></ipmi_sensor>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
+                    <username></username>
+                    <password></password>
+                    <publickey></publickey>
+                    <privatekey></privatekey>
                     <description>Total Rewards Credited</description>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -1341,56 +1341,56 @@
                             <name>HashVault: Revenue</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
+                    <valuemap></valuemap>
+                    <logtimefmt></logtimefmt>
+                    <preprocessing></preprocessing>
+                    <jmx_endpoint></jmx_endpoint>
                     <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
+                    <url></url>
+                    <query_fields></query_fields>
+                    <posts></posts>
                     <status_codes>200</status_codes>
                     <follow_redirects>1</follow_redirects>
                     <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
+                    <http_proxy></http_proxy>
+                    <headers></headers>
                     <retrieve_mode>0</retrieve_mode>
                     <request_method>0</request_method>
                     <output_format>0</output_format>
                     <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
+                    <ssl_cert_file></ssl_cert_file>
+                    <ssl_key_file></ssl_key_file>
+                    <ssl_key_password></ssl_key_password>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                 </item>
                 <item>
                     <name>Aux: Confirmed Balance (atomic)</name>
                     <type>0</type>
-                    <snmp_community/>
-                    <snmp_oid/>
+                    <snmp_community></snmp_community>
+                    <snmp_oid></snmp_oid>
                     <key>hashvault[{$WALLET_ADDRESS},revenue.auxConfirmedBalance]</key>
                     <delay>300s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
                     <status>0</status>
                     <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
+                    <allowed_hosts></allowed_hosts>
+                    <units></units>
+                    <snmpv3_contextname></snmpv3_contextname>
+                    <snmpv3_securityname></snmpv3_securityname>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
+                    <snmpv3_authpassphrase></snmpv3_authpassphrase>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
+                    <snmpv3_privpassphrase></snmpv3_privpassphrase>
+                    <params></params>
+                    <ipmi_sensor></ipmi_sensor>
                     <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
+                    <username></username>
+                    <password></password>
+                    <publickey></publickey>
+                    <privatekey></privatekey>
                     <description>Aux: Confirmed Balance (atomic)</description>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -1398,26 +1398,26 @@
                             <name>HashVault: Aux</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
+                    <valuemap></valuemap>
+                    <logtimefmt></logtimefmt>
+                    <preprocessing></preprocessing>
+                    <jmx_endpoint></jmx_endpoint>
                     <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
+                    <url></url>
+                    <query_fields></query_fields>
+                    <posts></posts>
                     <status_codes>200</status_codes>
                     <follow_redirects>1</follow_redirects>
                     <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
+                    <http_proxy></http_proxy>
+                    <headers></headers>
                     <retrieve_mode>0</retrieve_mode>
                     <request_method>0</request_method>
                     <output_format>0</output_format>
                     <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
+                    <ssl_cert_file></ssl_cert_file>
+                    <ssl_key_file></ssl_key_file>
+                    <ssl_key_password></ssl_key_password>
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                 </item>
@@ -1428,62 +1428,62 @@
         <trigger>
             <expression>{HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.hashRate].last()}=0</expression>
             <name>Hashrate is ZERO - all miners down</name>
-            <url/>
+            <url></url>
             <status>0</status>
             <priority>4</priority>
             <description>Current hashrate is zero.</description>
             <type>0</type>
             <manual_close>0</manual_close>
-            <dependencies/>
-            <tags/>
+            <dependencies></dependencies>
+            <tags></tags>
         </trigger>
         <trigger>
             <expression>{HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.avg1hashRate].last()}&lt;({HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.avg24hashRate].last()}*(100-{$HASHRATE_WARN_DROP_PCT})/100)</expression>
             <name>Hashrate dropped more than {$HASHRATE_WARN_DROP_PCT} pct vs 24h avg</name>
-            <url/>
+            <url></url>
             <status>0</status>
             <priority>2</priority>
             <description>Significant hashrate drop.</description>
             <type>0</type>
             <manual_close>0</manual_close>
-            <dependencies/>
-            <tags/>
+            <dependencies></dependencies>
+            <tags></tags>
         </trigger>
         <trigger>
             <expression>{HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.staleSharesPct].last()}&gt;{$STALE_SHARES_WARN_PCT}</expression>
             <name>Stale shares above {$STALE_SHARES_WARN_PCT} pct</name>
-            <url/>
+            <url></url>
             <status>0</status>
             <priority>2</priority>
             <description>High stale share rate.</description>
             <type>0</type>
             <manual_close>0</manual_close>
-            <dependencies/>
-            <tags/>
+            <dependencies></dependencies>
+            <tags></tags>
         </trigger>
         <trigger>
             <expression>{HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.invalidShares].last()}&gt;0 and {HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.invalidShares].change()}&gt;0</expression>
             <name>Invalid shares increasing</name>
-            <url/>
+            <url></url>
             <status>0</status>
             <priority>2</priority>
             <description>Invalid share count growing.</description>
             <type>0</type>
             <manual_close>0</manual_close>
-            <dependencies/>
-            <tags/>
+            <dependencies></dependencies>
+            <tags></tags>
         </trigger>
         <trigger>
             <expression>(now()-{HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.lastShare].last()}/1000)&gt;{$NO_SHARE_TIMEOUT}</expression>
             <name>No shares for more than {$NO_SHARE_TIMEOUT}s</name>
-            <url/>
+            <url></url>
             <status>0</status>
             <priority>4</priority>
             <description>No shares received recently.</description>
             <type>0</type>
             <manual_close>0</manual_close>
-            <dependencies/>
-            <tags/>
+            <dependencies></dependencies>
+            <tags></tags>
         </trigger>
     </triggers>
     <graphs>
