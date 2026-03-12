@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>6.0</version>
+    <date>2026-03-12T12:00:00Z</date>
+    <template_groups>
+        <template_group>
+            <uuid>7df96b18c230490a9a0a9e2307226338</uuid>
+            <name>Templates/Applications</name>
+        </template_group>
+    </template_groups>
+    <templates>
+        <template>
+            <uuid>a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6</uuid>
+            <template>HashVault Mining Pool</template>
+            <name>HashVault Mining Pool Monitor</name>
+            <description>Monitors Monero mining stats via HashVault API. Set {$WALLET_ADDRESS} macro on the host.</description>
+            <groups>
+                <group>
+                    <name>Templates/Applications</name>
+                </group>
+            </groups>
+            <macros>
+                <macro>
+                    <macro>{$WALLET_ADDRESS}</macro>
+                    <value>YOUR_WALLET_ADDRESS_HERE</value>
+                    <description>Monero wallet address for HashVault</description>
+                </macro>
+            </macros>
+            <items>
+                <!-- ==================== HASHRATE ==================== -->
+                <item>
+                    <uuid>b1000000000000000000000000000001</uuid>
+                    <name>Hashrate: Current</name>
+                    <key>hashvault[{$WALLET_ADDRESS},collective.hashRate]</key>
+                    <delay>60s</delay>
+                    <value_type>UNSIGNED</value_type>
+                    <units>H/s</units>
+                    <description>Current collective hashrate</description>
+                    <tags>
+                        <tag><tag>component</tag><value>hashrate</value></tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>b1000000000000000000000000000002</uuid>
+                    <name>Hashrate: 1h Average</name>
+                    <key>hashvault[{$WALLET_ADDRESS},collective.avg1hashRate]</key>
+                    <delay>60s</delay>
+                    <value_type>UNSIGNED</value_type>
+                    <units>H/s</units>
+                    <description>1-hour average hashrate</description>
+                    <tags>
+                        <tag><tag>component</tag><value>hashrate</value></tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>b1000000000000000000000000000003</uuid>
+                    <name>Hashrate: 3h Average</name>
+                    <key>hashvault[{$WALLET_ADDRESS},collective.avg3hashRate]</key>
+                    <delay>60s</delay>
+                    <value_type>UNSIGNED</value_type>
+                    <units>H/s</units>
+                    <description>3-hour average hashrate</description>
+                    <tags>
+                        <tag><tag>component</tag><value>hashrate</value></tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>b1000000000000000000000000000004</uuid>
+                    <name>Hashrate: 6h Average</name>
+                    <key>hashvault[{$WALLET_ADDRESS},collective.avg6hashRate]</key>
+                    <delay>60s</delay>
+                    <value_type>UNSIGNED</value_type>
+                    <units>H/s</units>
+                    <description>6-hour average hashrate</description>
+                    <tags>
+                        <tag><tag>component</tag><value>hashrate</value></tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>b1000000000000000000000000000005</uuid>
+                    <name>Hashrate: 24h Average</name>
+                    <key>hashvault[{$WALLET_ADDRESS},collective.avg24hashRate]</key>
+                    <delay>60s</delay>
+                    <value_type>UNSIGNED</value_type>
+                    <units>H/s</units>
+                    <description>24-hour average hashrate</description>
+                    <tags>
+                        <tag><tag>component</tag><value>hashrate</value></tag>
+                    </tags>
+                </item>
+                <!-- ==================== SHARES ==================== -->
+                <item>
+                    <uuid>b2000000000000000000000000000001</uuid>
+                    <name>Shares: Valid</name>
+                    <key>hashvault[{$WALLET_ADDRESS},collective.validShares]</key>
+                    <delay>300s</delay>
+                    <value_type>UNSIGNED</value_type>
+                    <description>Total valid shares</description>
+                    <tags>
+                        <tag><tag>component</tag><value>shares</value></tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>b2000000000000000000000000000002</uuid>
+                    <name>Shares: Invalid</name>
+                    <key>hashvault[{$WALLET_ADDRESS},collective.invalidShares]</key>
+                    <delay>300s</delay>
+                    <value_type>UNSIGNED</value_type>
+                    <description>Total invalid shares</description>
+                    <tags>
+                        <tag><tag>component</tag><value>shares</value></tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>b2000000000000000000000000000003</uuid>
+                    <name>Shares: Stale</name>
+                    <key>hashvault[{$WALLET_ADDRESS},collective.staleShares]</key>
+                    <delay>300s</delay>
+                    <value_type>UNSIGNED</value_type>
+                    <description>Total stale shares</description>
+                    <tags>
+                        <tag><tag>component</tag><value>shares</value></tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>b2000000000000000000000000000004</uuid>
+                    <name>Shares: Stale Percentage</name>
+                    <key>hashvault[{$WALLET_ADDRESS},collective.staleSharesPct]</key>
+                    <delay>300s</delay>
+                    <value_type>FLOAT</value_type>
+                    <units>%</units>
+                    <description>Stale shares as percentage of valid shares</description>
+                    <tags>
+                        <tag><tag>component</tag><value>shares</value></tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>b2000000000000000000000000000005</uuid>
+                    <name>Shares: Rate (per 30s)</name>
+                    <key>hashvault[{$WALLET_ADDRESS},collective.shareRate]</key>
+                    <delay>60s</delay>
+                    <value_type>FLOAT</value_type>
+                    <description>Shares submitted per 30 seconds</description>
+                    <tags>
+                        <tag><tag>component</tag><value>shares</value></tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>b2000000000000000000000000000006</uuid>
+                    <name>Last Share Timestamp</name>
+                    <key>hashvault[{$WALLET_ADDRESS},collective.lastShare]</key>
+                    <delay>60s</delay>
+                    <value_type>UNSIGNED</value_type>
+                    <units>unixtime</units>
+                    <description>Timestamp of last share (ms)</description>
+                    <tags>
+                        <tag><tag>component</tag><value>shares</value></tag>
+                    </tags>
+                </item>
+                <!-- ==================== HASHES & BLOCKS ==================== -->
+                <item>
+                    <uuid>b3000000000000000000000000000001</uuid>
+                    <name>Round Hashes</name>
+                    <key>hashvault[{$WALLET_ADDRESS},collective.roundHashes]</key>
+                    <delay>300s</delay>
+                    <value_type>UNSIGNED</value_type>
+                    <description>Hashes in current round</description>
+                    <tags>
+                        <tag><tag>component</tag><value>mining</value></tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>b3000000000000000000000000000002</uuid>
+                    <name>Total Hashes</name>
+                    <key>hashvault[{$WALLET_ADDRESS},collective.totalHashes]</key>
+                    <delay>300s</delay>
+                    <value_type>UNSIGNED</value_type>
+                    <description>Total hashes submitted all-time</description>
+                    <tags>
+                        <tag><tag>component</tag><value>mining</value></tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>b3000000000000000000000000000003</uuid>
+                    <name>Blocks Found</name>
+                    <key>hashvault[{$WALLET_ADDRESS},collective.foundBlocks]</key>
+                    <delay>300s</delay>
+                    <value_type>UNSIGNED</value_type>
+                    <description>Total blocks found</description>
+                    <tags>
+                        <tag><tag>component</tag><value>mining</value></tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>b3000000000000000000000000000004</uuid>
+                    <name>Current Effort</name>
+                    <key>hashvault[{$WALLET_ADDRESS},collective.currentEffort]</key>
+                    <delay>60s</delay>
+                    <value_type>FLOAT</value_type>
+                    <units>%</units>
+                    <description>Current mining effort percentage</description>
+                    <tags>
+                        <tag><tag>component</tag><value>mining</value></tag>
+                    </tags>
+                </item>
+                <!-- ==================== REVENUE ==================== -->
+                <item>
+                    <uuid>b4000000000000000000000000000001</uuid>
+                    <name>Balance: Confirmed (XMR)</name>
+                    <key>hashvault[{$WALLET_ADDRESS},revenue.confirmedBalanceXMR]</key>
+                    <delay>300s</delay>
+                    <value_type>FLOAT</value_type>
+                    <units>XMR</units>
+                    <description>Confirmed balance in XMR</description>
+                    <tags>
+                        <tag><tag>component</tag><value>revenue</value></tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>b4000000000000000000000000000002</uuid>
+                    <name>Balance: Confirmed (atomic)</name>
+                    <key>hashvault[{$WALLET_ADDRESS},revenue.confirmedBalance]</key>
+                    <delay>300s</delay>
+                    <value_type>UNSIGNED</value_type>
+                    <description>Confirmed balance in atomic units</description>
+                    <tags>
+                        <tag><tag>component</tag><value>revenue</value></tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>b4000000000000000000000000000003</uuid>
+                    <name>Balance: Unconfirmed Collective</name>
+                    <key>hashvault[{$WALLET_ADDRESS},revenue.unconfirmedBalance.collective.total]</key>
+                    <delay>300s</delay>
+                    <value_type>UNSIGNED</value_type>
+                    <description>Unconfirmed collective balance (atomic)</description>
+                    <tags>
+                        <tag><tag>component</tag><value>revenue</value></tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>b4000000000000000000000000000004</uuid>
+                    <name>Total Paid (XMR)</name>
+                    <key>hashvault[{$WALLET_ADDRESS},revenue.totalPaidXMR]</key>
+                    <delay>3600s</delay>
+                    <value_type>FLOAT</value_type>
+                    <units>XMR</units>
+                    <description>Total XMR paid out all-time</description>
+                    <tags>
+                        <tag><tag>component</tag><value>revenue</value></tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>b4000000000000000000000000000005</uuid>
+                    <name>Daily Credited (XMR)</name>
+                    <key>hashvault[{$WALLET_ADDRESS},revenue.dailyCreditedXMR]</key>
+                    <delay>300s</delay>
+                    <value_type>FLOAT</value_type>
+                    <units>XMR</units>
+                    <description>XMR credited in last 24 hours</description>
+                    <tags>
+                        <tag><tag>component</tag><value>revenue</value></tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>b4000000000000000000000000000006</uuid>
+                    <name>Payout Threshold (XMR)</name>
+                    <key>hashvault[{$WALLET_ADDRESS},revenue.payoutThresholdXMR]</key>
+                    <delay>3600s</delay>
+                    <value_type>FLOAT</value_type>
+                    <units>XMR</units>
+                    <description>Configured payout threshold</description>
+                    <tags>
+                        <tag><tag>component</tag><value>revenue</value></tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>b4000000000000000000000000000007</uuid>
+                    <name>Total Payments Sent</name>
+                    <key>hashvault[{$WALLET_ADDRESS},revenue.totalPaymentsSent]</key>
+                    <delay>3600s</delay>
+                    <value_type>UNSIGNED</value_type>
+                    <description>Number of payouts sent</description>
+                    <tags>
+                        <tag><tag>component</tag><value>revenue</value></tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>b4000000000000000000000000000008</uuid>
+                    <name>Total Rewards Credited</name>
+                    <key>hashvault[{$WALLET_ADDRESS},revenue.totalRewardsCredited]</key>
+                    <delay>3600s</delay>
+                    <value_type>UNSIGNED</value_type>
+                    <description>Number of rewards credited</description>
+                    <tags>
+                        <tag><tag>component</tag><value>revenue</value></tag>
+                    </tags>
+                </item>
+                <!-- ==================== AUX (merge-mined coin) ==================== -->
+                <item>
+                    <uuid>b5000000000000000000000000000001</uuid>
+                    <name>Aux: Confirmed Balance (atomic)</name>
+                    <key>hashvault[{$WALLET_ADDRESS},revenue.auxConfirmedBalance]</key>
+                    <delay>300s</delay>
+                    <value_type>UNSIGNED</value_type>
+                    <description>Merge-mined coin confirmed balance</description>
+                    <tags>
+                        <tag><tag>component</tag><value>aux</value></tag>
+                    </tags>
+                </item>
+            </items>
+            <!-- ==================== TRIGGERS ==================== -->
+            <triggers>
+                <trigger>
+                    <uuid>c1000000000000000000000000000001</uuid>
+                    <expression>last(/HashVault Mining Pool/hashvault[{$WALLET_ADDRESS},collective.hashRate])=0</expression>
+                    <name>Hashrate is ZERO - all miners down</name>
+                    <priority>HIGH</priority>
+                    <description>Current hashrate dropped to zero. All miners may be offline.</description>
+                    <tags>
+                        <tag><tag>scope</tag><value>availability</value></tag>
+                    </tags>
+                </trigger>
+                <trigger>
+                    <uuid>c1000000000000000000000000000002</uuid>
+                    <expression>last(/HashVault Mining Pool/hashvault[{$WALLET_ADDRESS},collective.avg1hashRate])&lt;(avg(/HashVault Mining Pool/hashvault[{$WALLET_ADDRESS},collective.avg24hashRate],1h)*0.5)</expression>
+                    <name>Hashrate dropped &gt;50% vs 24h average</name>
+                    <priority>WARNING</priority>
+                    <description>1-hour average hashrate is less than half the 24-hour average.</description>
+                    <tags>
+                        <tag><tag>scope</tag><value>performance</value></tag>
+                    </tags>
+                </trigger>
+                <trigger>
+                    <uuid>c1000000000000000000000000000003</uuid>
+                    <expression>last(/HashVault Mining Pool/hashvault[{$WALLET_ADDRESS},collective.staleSharesPct])&gt;5</expression>
+                    <name>Stale shares &gt;5%</name>
+                    <priority>WARNING</priority>
+                    <description>High stale share rate may indicate network latency issues.</description>
+                    <tags>
+                        <tag><tag>scope</tag><value>performance</value></tag>
+                    </tags>
+                </trigger>
+                <trigger>
+                    <uuid>c1000000000000000000000000000004</uuid>
+                    <expression>last(/HashVault Mining Pool/hashvault[{$WALLET_ADDRESS},collective.invalidShares])&gt;0 and change(/HashVault Mining Pool/hashvault[{$WALLET_ADDRESS},collective.invalidShares])&gt;0</expression>
+                    <name>Invalid shares increasing</name>
+                    <priority>WARNING</priority>
+                    <description>Invalid share count is growing. Check miner configuration.</description>
+                    <tags>
+                        <tag><tag>scope</tag><value>performance</value></tag>
+                    </tags>
+                </trigger>
+                <trigger>
+                    <uuid>c1000000000000000000000000000005</uuid>
+                    <expression>(now()-last(/HashVault Mining Pool/hashvault[{$WALLET_ADDRESS},collective.lastShare])/1000)&gt;600</expression>
+                    <name>No shares submitted for &gt;10 minutes</name>
+                    <priority>HIGH</priority>
+                    <description>Last share was more than 10 minutes ago. Miners may be disconnected.</description>
+                    <tags>
+                        <tag><tag>scope</tag><value>availability</value></tag>
+                    </tags>
+                </trigger>
+            </triggers>
+            <!-- ==================== GRAPHS ==================== -->
+            <graphs>
+                <graph>
+                    <uuid>d1000000000000000000000000000001</uuid>
+                    <name>Hashrate Overview</name>
+                    <graph_items>
+                        <graph_item>
+                            <color>00AA00</color>
+                            <item>
+                                <host>HashVault Mining Pool</host>
+                                <key>hashvault[{$WALLET_ADDRESS},collective.hashRate]</key>
+                            </item>
+                        </graph_item>
+                        <graph_item>
+                            <sortorder>1</sortorder>
+                            <color>0000CC</color>
+                            <item>
+                                <host>HashVault Mining Pool</host>
+                                <key>hashvault[{$WALLET_ADDRESS},collective.avg1hashRate]</key>
+                            </item>
+                        </graph_item>
+                        <graph_item>
+                            <sortorder>2</sortorder>
+                            <color>CC6600</color>
+                            <item>
+                                <host>HashVault Mining Pool</host>
+                                <key>hashvault[{$WALLET_ADDRESS},collective.avg24hashRate]</key>
+                            </item>
+                        </graph_item>
+                    </graph_items>
+                </graph>
+                <graph>
+                    <uuid>d1000000000000000000000000000002</uuid>
+                    <name>Balance (XMR)</name>
+                    <graph_items>
+                        <graph_item>
+                            <color>00AA00</color>
+                            <item>
+                                <host>HashVault Mining Pool</host>
+                                <key>hashvault[{$WALLET_ADDRESS},revenue.confirmedBalanceXMR]</key>
+                            </item>
+                        </graph_item>
+                        <graph_item>
+                            <sortorder>1</sortorder>
+                            <color>CC0000</color>
+                            <item>
+                                <host>HashVault Mining Pool</host>
+                                <key>hashvault[{$WALLET_ADDRESS},revenue.payoutThresholdXMR]</key>
+                            </item>
+                        </graph_item>
+                    </graph_items>
+                </graph>
+                <graph>
+                    <uuid>d1000000000000000000000000000003</uuid>
+                    <name>Shares Quality</name>
+                    <graph_items>
+                        <graph_item>
+                            <color>CC6600</color>
+                            <item>
+                                <host>HashVault Mining Pool</host>
+                                <key>hashvault[{$WALLET_ADDRESS},collective.staleSharesPct]</key>
+                            </item>
+                        </graph_item>
+                    </graph_items>
+                </graph>
+            </graphs>
+        </template>
+    </templates>
+</zabbix_export>
