@@ -54,7 +54,6 @@
             <items>
                 <item>
                     <name>Hashrate: Current</name>
-                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.hashRate]</key>
                     <delay>60s</delay>
                     <history>90d</history>
@@ -70,7 +69,6 @@
                 </item>
                 <item>
                     <name>Hashrate: 1h Average</name>
-                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.avg1hashRate]</key>
                     <delay>60s</delay>
                     <history>90d</history>
@@ -86,7 +84,6 @@
                 </item>
                 <item>
                     <name>Hashrate: 3h Average</name>
-                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.avg3hashRate]</key>
                     <delay>60s</delay>
                     <history>90d</history>
@@ -102,7 +99,6 @@
                 </item>
                 <item>
                     <name>Hashrate: 6h Average</name>
-                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.avg6hashRate]</key>
                     <delay>60s</delay>
                     <history>90d</history>
@@ -118,7 +114,6 @@
                 </item>
                 <item>
                     <name>Hashrate: 24h Average</name>
-                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.avg24hashRate]</key>
                     <delay>60s</delay>
                     <history>90d</history>
@@ -134,7 +129,6 @@
                 </item>
                 <item>
                     <name>Shares: Valid</name>
-                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.validShares]</key>
                     <delay>300s</delay>
                     <history>90d</history>
@@ -149,7 +143,6 @@
                 </item>
                 <item>
                     <name>Shares: Invalid</name>
-                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.invalidShares]</key>
                     <delay>300s</delay>
                     <history>90d</history>
@@ -164,7 +157,6 @@
                 </item>
                 <item>
                     <name>Shares: Stale</name>
-                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.staleShares]</key>
                     <delay>300s</delay>
                     <history>90d</history>
@@ -179,7 +171,6 @@
                 </item>
                 <item>
                     <name>Shares: Stale Percentage</name>
-                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.staleSharesPct]</key>
                     <delay>300s</delay>
                     <history>90d</history>
@@ -195,7 +186,6 @@
                 </item>
                 <item>
                     <name>Shares: Rate (per 30s)</name>
-                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.shareRate]</key>
                     <delay>60s</delay>
                     <history>90d</history>
@@ -210,7 +200,6 @@
                 </item>
                 <item>
                     <name>Last Share Timestamp</name>
-                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.lastShare]</key>
                     <delay>60s</delay>
                     <history>90d</history>
@@ -226,7 +215,6 @@
                 </item>
                 <item>
                     <name>Round Hashes</name>
-                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.roundHashes]</key>
                     <delay>300s</delay>
                     <history>90d</history>
@@ -241,7 +229,6 @@
                 </item>
                 <item>
                     <name>Total Hashes</name>
-                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.totalHashes]</key>
                     <delay>300s</delay>
                     <history>90d</history>
@@ -256,7 +243,6 @@
                 </item>
                 <item>
                     <name>Blocks Found</name>
-                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.foundBlocks]</key>
                     <delay>300s</delay>
                     <history>90d</history>
@@ -271,7 +257,6 @@
                 </item>
                 <item>
                     <name>Current Effort</name>
-                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.currentEffort]</key>
                     <delay>60s</delay>
                     <history>90d</history>
@@ -287,7 +272,6 @@
                 </item>
                 <item>
                     <name>Balance: Confirmed (XMR)</name>
-                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},revenue.confirmedBalanceXMR]</key>
                     <delay>300s</delay>
                     <history>90d</history>
@@ -303,7 +287,6 @@
                 </item>
                 <item>
                     <name>Balance: Confirmed (atomic)</name>
-                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},revenue.confirmedBalance]</key>
                     <delay>300s</delay>
                     <history>90d</history>
@@ -318,7 +301,6 @@
                 </item>
                 <item>
                     <name>Balance: Unconfirmed Collective</name>
-                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},revenue.unconfirmedBalance.collective.total]</key>
                     <delay>300s</delay>
                     <history>90d</history>
@@ -333,7 +315,6 @@
                 </item>
                 <item>
                     <name>Total Paid (XMR)</name>
-                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},revenue.totalPaidXMR]</key>
                     <delay>3600s</delay>
                     <history>90d</history>
@@ -349,7 +330,6 @@
                 </item>
                 <item>
                     <name>Daily Credited (XMR)</name>
-                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},revenue.dailyCreditedXMR]</key>
                     <delay>300s</delay>
                     <history>90d</history>
@@ -365,7 +345,6 @@
                 </item>
                 <item>
                     <name>Payout Threshold (XMR)</name>
-                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},revenue.payoutThresholdXMR]</key>
                     <delay>3600s</delay>
                     <history>90d</history>
@@ -381,7 +360,6 @@
                 </item>
                 <item>
                     <name>Total Payments Sent</name>
-                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},revenue.totalPaymentsSent]</key>
                     <delay>3600s</delay>
                     <history>90d</history>
@@ -396,7 +374,6 @@
                 </item>
                 <item>
                     <name>Total Rewards Credited</name>
-                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},revenue.totalRewardsCredited]</key>
                     <delay>3600s</delay>
                     <history>90d</history>
@@ -411,7 +388,6 @@
                 </item>
                 <item>
                     <name>Aux: Confirmed Balance (atomic)</name>
-                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},revenue.auxConfirmedBalance]</key>
                     <delay>300s</delay>
                     <history>90d</history>
