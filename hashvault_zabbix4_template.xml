@@ -320,105 +320,105 @@
                     </applications>
                 </item>
             </items>
-            <triggers>
-                <trigger>
-                    <expression>{HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.hashRate].last()}=0</expression>
-                    <name>Hashrate is ZERO - all miners down</name>
-                    <priority>4</priority>
-                    <description>Current hashrate dropped to zero.</description>
-                </trigger>
-                <trigger>
-                    <expression>{HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.avg1hashRate].last()}&lt;({HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.avg24hashRate].last()}*(100-{$HASHRATE_WARN_DROP_PCT})/100)</expression>
-                    <name>Hashrate dropped more than {$HASHRATE_WARN_DROP_PCT} pct vs 24h avg</name>
-                    <priority>2</priority>
-                    <description>1h avg hashrate dropped significantly vs 24h average.</description>
-                </trigger>
-                <trigger>
-                    <expression>{HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.staleSharesPct].last()}&gt;{$STALE_SHARES_WARN_PCT}</expression>
-                    <name>Stale shares above {$STALE_SHARES_WARN_PCT} pct</name>
-                    <priority>2</priority>
-                    <description>High stale share rate.</description>
-                </trigger>
-                <trigger>
-                    <expression>{HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.invalidShares].last()}&gt;0 and {HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.invalidShares].change()}&gt;0</expression>
-                    <name>Invalid shares increasing</name>
-                    <priority>2</priority>
-                    <description>Invalid share count is growing.</description>
-                </trigger>
-                <trigger>
-                    <expression>(now()-{HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.lastShare].last()}/1000)&gt;{$NO_SHARE_TIMEOUT}</expression>
-                    <name>No shares for more than {$NO_SHARE_TIMEOUT}s</name>
-                    <priority>4</priority>
-                    <description>No shares received recently.</description>
-                </trigger>
-            </triggers>
-            <graphs>
-                <graph>
-                    <name>Hashrate Overview</name>
-                    <graph_items>
-                        <graph_item>
-                            <sortorder>0</sortorder>
-                            <color>00AA00</color>
-                            <item><host>HashVault Mining Pool</host><key>hashvault[{$WALLET_ADDRESS},collective.hashRate]</key></item>
-                        </graph_item>
-                        <graph_item>
-                            <sortorder>1</sortorder>
-                            <color>0000CC</color>
-                            <item><host>HashVault Mining Pool</host><key>hashvault[{$WALLET_ADDRESS},collective.avg1hashRate]</key></item>
-                        </graph_item>
-                        <graph_item>
-                            <sortorder>2</sortorder>
-                            <color>CC6600</color>
-                            <item><host>HashVault Mining Pool</host><key>hashvault[{$WALLET_ADDRESS},collective.avg24hashRate]</key></item>
-                        </graph_item>
-                    </graph_items>
-                </graph>
-                <graph>
-                    <name>Balance vs Threshold (XMR)</name>
-                    <graph_items>
-                        <graph_item>
-                            <sortorder>0</sortorder>
-                            <color>00AA00</color>
-                            <item><host>HashVault Mining Pool</host><key>hashvault[{$WALLET_ADDRESS},revenue.confirmedBalanceXMR]</key></item>
-                        </graph_item>
-                        <graph_item>
-                            <sortorder>1</sortorder>
-                            <color>CC0000</color>
-                            <item><host>HashVault Mining Pool</host><key>hashvault[{$WALLET_ADDRESS},revenue.payoutThresholdXMR]</key></item>
-                        </graph_item>
-                    </graph_items>
-                </graph>
-                <graph>
-                    <name>Stale Shares Pct</name>
-                    <graph_items>
-                        <graph_item>
-                            <sortorder>0</sortorder>
-                            <color>CC6600</color>
-                            <item><host>HashVault Mining Pool</host><key>hashvault[{$WALLET_ADDRESS},collective.staleSharesPct]</key></item>
-                        </graph_item>
-                    </graph_items>
-                </graph>
-                <graph>
-                    <name>Daily Earnings (XMR)</name>
-                    <graph_items>
-                        <graph_item>
-                            <sortorder>0</sortorder>
-                            <color>6600CC</color>
-                            <item><host>HashVault Mining Pool</host><key>hashvault[{$WALLET_ADDRESS},revenue.dailyCreditedXMR]</key></item>
-                        </graph_item>
-                    </graph_items>
-                </graph>
-                <graph>
-                    <name>Mining Effort</name>
-                    <graph_items>
-                        <graph_item>
-                            <sortorder>0</sortorder>
-                            <color>CC0066</color>
-                            <item><host>HashVault Mining Pool</host><key>hashvault[{$WALLET_ADDRESS},collective.currentEffort]</key></item>
-                        </graph_item>
-                    </graph_items>
-                </graph>
-            </graphs>
         </template>
     </templates>
+    <triggers>
+        <trigger>
+            <expression>{HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.hashRate].last()}=0</expression>
+            <name>Hashrate is ZERO - all miners down</name>
+            <priority>4</priority>
+            <description>Current hashrate dropped to zero.</description>
+        </trigger>
+        <trigger>
+            <expression>{HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.avg1hashRate].last()}&lt;({HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.avg24hashRate].last()}*(100-{$HASHRATE_WARN_DROP_PCT})/100)</expression>
+            <name>Hashrate dropped more than {$HASHRATE_WARN_DROP_PCT} pct vs 24h avg</name>
+            <priority>2</priority>
+            <description>1h avg hashrate dropped significantly vs 24h average.</description>
+        </trigger>
+        <trigger>
+            <expression>{HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.staleSharesPct].last()}&gt;{$STALE_SHARES_WARN_PCT}</expression>
+            <name>Stale shares above {$STALE_SHARES_WARN_PCT} pct</name>
+            <priority>2</priority>
+            <description>High stale share rate.</description>
+        </trigger>
+        <trigger>
+            <expression>{HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.invalidShares].last()}&gt;0 and {HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.invalidShares].change()}&gt;0</expression>
+            <name>Invalid shares increasing</name>
+            <priority>2</priority>
+            <description>Invalid share count is growing.</description>
+        </trigger>
+        <trigger>
+            <expression>(now()-{HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.lastShare].last()}/1000)&gt;{$NO_SHARE_TIMEOUT}</expression>
+            <name>No shares for more than {$NO_SHARE_TIMEOUT}s</name>
+            <priority>4</priority>
+            <description>No shares received recently.</description>
+        </trigger>
+    </triggers>
+    <graphs>
+        <graph>
+            <name>Hashrate Overview</name>
+            <graph_items>
+                <graph_item>
+                    <sortorder>0</sortorder>
+                    <color>00AA00</color>
+                    <item><host>HashVault Mining Pool</host><key>hashvault[{$WALLET_ADDRESS},collective.hashRate]</key></item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <color>0000CC</color>
+                    <item><host>HashVault Mining Pool</host><key>hashvault[{$WALLET_ADDRESS},collective.avg1hashRate]</key></item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <color>CC6600</color>
+                    <item><host>HashVault Mining Pool</host><key>hashvault[{$WALLET_ADDRESS},collective.avg24hashRate]</key></item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>Balance vs Threshold (XMR)</name>
+            <graph_items>
+                <graph_item>
+                    <sortorder>0</sortorder>
+                    <color>00AA00</color>
+                    <item><host>HashVault Mining Pool</host><key>hashvault[{$WALLET_ADDRESS},revenue.confirmedBalanceXMR]</key></item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <color>CC0000</color>
+                    <item><host>HashVault Mining Pool</host><key>hashvault[{$WALLET_ADDRESS},revenue.payoutThresholdXMR]</key></item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>Stale Shares Pct</name>
+            <graph_items>
+                <graph_item>
+                    <sortorder>0</sortorder>
+                    <color>CC6600</color>
+                    <item><host>HashVault Mining Pool</host><key>hashvault[{$WALLET_ADDRESS},collective.staleSharesPct]</key></item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>Daily Earnings (XMR)</name>
+            <graph_items>
+                <graph_item>
+                    <sortorder>0</sortorder>
+                    <color>6600CC</color>
+                    <item><host>HashVault Mining Pool</host><key>hashvault[{$WALLET_ADDRESS},revenue.dailyCreditedXMR]</key></item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>Mining Effort</name>
+            <graph_items>
+                <graph_item>
+                    <sortorder>0</sortorder>
+                    <color>CC0066</color>
+                    <item><host>HashVault Mining Pool</host><key>hashvault[{$WALLET_ADDRESS},collective.currentEffort]</key></item>
+                </graph_item>
+            </graph_items>
+        </graph>
+    </graphs>
 </zabbix_export>
