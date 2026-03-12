@@ -2,36 +2,32 @@
 <zabbix_export>
     <version>5.0</version>
     <date>2026-03-12T12:00:00Z</date>
-    <groups>
-        <group>
-            <n>Templates/Applications</n>
-        </group>
-    </groups>
+
     <templates>
         <template>
             <template>HashVault Mining Pool</template>
-            <n>HashVault Mining Pool Monitor</n>
+            <name>HashVault Mining Pool Monitor</name>
             <description>Monitors Monero mining stats via HashVault API. Set {$WALLET_ADDRESS} macro on the host.</description>
             <groups>
                 <group>
-                    <n>Templates/Applications</n>
+                    <name>Templates/Applications</name>
                 </group>
             </groups>
             <applications>
                 <application>
-                    <n>HashVault: Hashrate</n>
+                    <name>HashVault: Hashrate</name>
                 </application>
                 <application>
-                    <n>HashVault: Shares</n>
+                    <name>HashVault: Shares</name>
                 </application>
                 <application>
-                    <n>HashVault: Mining</n>
+                    <name>HashVault: Mining</name>
                 </application>
                 <application>
-                    <n>HashVault: Revenue</n>
+                    <name>HashVault: Revenue</name>
                 </application>
                 <application>
-                    <n>HashVault: Aux</n>
+                    <name>HashVault: Aux</name>
                 </application>
             </applications>
             <macros>
@@ -43,12 +39,12 @@
                 <macro>
                     <macro>{$HASHRATE_WARN_DROP_PCT}</macro>
                     <value>50</value>
-                    <description>Hashrate drop % threshold for warning trigger</description>
+                    <description>Hashrate drop pct threshold for warning</description>
                 </macro>
                 <macro>
                     <macro>{$STALE_SHARES_WARN_PCT}</macro>
                     <value>5</value>
-                    <description>Stale shares % threshold for warning trigger</description>
+                    <description>Stale shares pct threshold for warning</description>
                 </macro>
                 <macro>
                     <macro>{$NO_SHARE_TIMEOUT}</macro>
@@ -57,9 +53,9 @@
                 </macro>
             </macros>
             <items>
-                <!-- ==================== HASHRATE ==================== -->
                 <item>
-                    <n>Hashrate: Current</n>
+                    <name>Hashrate: Current</name>
+                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.hashRate]</key>
                     <delay>60s</delay>
                     <history>90d</history>
@@ -68,11 +64,14 @@
                     <units>H/s</units>
                     <description>Current collective hashrate</description>
                     <applications>
-                        <application><n>HashVault: Hashrate</n></application>
+                        <application>
+                            <name>HashVault: Hashrate</name>
+                        </application>
                     </applications>
                 </item>
                 <item>
-                    <n>Hashrate: 1h Average</n>
+                    <name>Hashrate: 1h Average</name>
+                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.avg1hashRate]</key>
                     <delay>60s</delay>
                     <history>90d</history>
@@ -81,11 +80,14 @@
                     <units>H/s</units>
                     <description>1-hour average hashrate</description>
                     <applications>
-                        <application><n>HashVault: Hashrate</n></application>
+                        <application>
+                            <name>HashVault: Hashrate</name>
+                        </application>
                     </applications>
                 </item>
                 <item>
-                    <n>Hashrate: 3h Average</n>
+                    <name>Hashrate: 3h Average</name>
+                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.avg3hashRate]</key>
                     <delay>60s</delay>
                     <history>90d</history>
@@ -94,11 +96,14 @@
                     <units>H/s</units>
                     <description>3-hour average hashrate</description>
                     <applications>
-                        <application><n>HashVault: Hashrate</n></application>
+                        <application>
+                            <name>HashVault: Hashrate</name>
+                        </application>
                     </applications>
                 </item>
                 <item>
-                    <n>Hashrate: 6h Average</n>
+                    <name>Hashrate: 6h Average</name>
+                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.avg6hashRate]</key>
                     <delay>60s</delay>
                     <history>90d</history>
@@ -107,11 +112,14 @@
                     <units>H/s</units>
                     <description>6-hour average hashrate</description>
                     <applications>
-                        <application><n>HashVault: Hashrate</n></application>
+                        <application>
+                            <name>HashVault: Hashrate</name>
+                        </application>
                     </applications>
                 </item>
                 <item>
-                    <n>Hashrate: 24h Average</n>
+                    <name>Hashrate: 24h Average</name>
+                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.avg24hashRate]</key>
                     <delay>60s</delay>
                     <history>90d</history>
@@ -120,12 +128,14 @@
                     <units>H/s</units>
                     <description>24-hour average hashrate</description>
                     <applications>
-                        <application><n>HashVault: Hashrate</n></application>
+                        <application>
+                            <name>HashVault: Hashrate</name>
+                        </application>
                     </applications>
                 </item>
-                <!-- ==================== SHARES ==================== -->
                 <item>
-                    <n>Shares: Valid</n>
+                    <name>Shares: Valid</name>
+                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.validShares]</key>
                     <delay>300s</delay>
                     <history>90d</history>
@@ -133,11 +143,14 @@
                     <value_type>3</value_type>
                     <description>Total valid shares</description>
                     <applications>
-                        <application><n>HashVault: Shares</n></application>
+                        <application>
+                            <name>HashVault: Shares</name>
+                        </application>
                     </applications>
                 </item>
                 <item>
-                    <n>Shares: Invalid</n>
+                    <name>Shares: Invalid</name>
+                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.invalidShares]</key>
                     <delay>300s</delay>
                     <history>90d</history>
@@ -145,11 +158,14 @@
                     <value_type>3</value_type>
                     <description>Total invalid shares</description>
                     <applications>
-                        <application><n>HashVault: Shares</n></application>
+                        <application>
+                            <name>HashVault: Shares</name>
+                        </application>
                     </applications>
                 </item>
                 <item>
-                    <n>Shares: Stale</n>
+                    <name>Shares: Stale</name>
+                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.staleShares]</key>
                     <delay>300s</delay>
                     <history>90d</history>
@@ -157,11 +173,14 @@
                     <value_type>3</value_type>
                     <description>Total stale shares</description>
                     <applications>
-                        <application><n>HashVault: Shares</n></application>
+                        <application>
+                            <name>HashVault: Shares</name>
+                        </application>
                     </applications>
                 </item>
                 <item>
-                    <n>Shares: Stale Percentage</n>
+                    <name>Shares: Stale Percentage</name>
+                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.staleSharesPct]</key>
                     <delay>300s</delay>
                     <history>90d</history>
@@ -170,11 +189,14 @@
                     <units>%</units>
                     <description>Stale shares as percentage of valid shares</description>
                     <applications>
-                        <application><n>HashVault: Shares</n></application>
+                        <application>
+                            <name>HashVault: Shares</name>
+                        </application>
                     </applications>
                 </item>
                 <item>
-                    <n>Shares: Rate (per 30s)</n>
+                    <name>Shares: Rate (per 30s)</name>
+                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.shareRate]</key>
                     <delay>60s</delay>
                     <history>90d</history>
@@ -182,11 +204,14 @@
                     <value_type>0</value_type>
                     <description>Shares submitted per 30 seconds</description>
                     <applications>
-                        <application><n>HashVault: Shares</n></application>
+                        <application>
+                            <name>HashVault: Shares</name>
+                        </application>
                     </applications>
                 </item>
                 <item>
-                    <n>Last Share Timestamp</n>
+                    <name>Last Share Timestamp</name>
+                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.lastShare]</key>
                     <delay>60s</delay>
                     <history>90d</history>
@@ -195,12 +220,14 @@
                     <units>unixtime</units>
                     <description>Timestamp of last share (ms since epoch)</description>
                     <applications>
-                        <application><n>HashVault: Shares</n></application>
+                        <application>
+                            <name>HashVault: Shares</name>
+                        </application>
                     </applications>
                 </item>
-                <!-- ==================== HASHES & BLOCKS ==================== -->
                 <item>
-                    <n>Round Hashes</n>
+                    <name>Round Hashes</name>
+                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.roundHashes]</key>
                     <delay>300s</delay>
                     <history>90d</history>
@@ -208,11 +235,14 @@
                     <value_type>3</value_type>
                     <description>Hashes in current round</description>
                     <applications>
-                        <application><n>HashVault: Mining</n></application>
+                        <application>
+                            <name>HashVault: Mining</name>
+                        </application>
                     </applications>
                 </item>
                 <item>
-                    <n>Total Hashes</n>
+                    <name>Total Hashes</name>
+                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.totalHashes]</key>
                     <delay>300s</delay>
                     <history>90d</history>
@@ -220,11 +250,14 @@
                     <value_type>3</value_type>
                     <description>Total hashes submitted all-time</description>
                     <applications>
-                        <application><n>HashVault: Mining</n></application>
+                        <application>
+                            <name>HashVault: Mining</name>
+                        </application>
                     </applications>
                 </item>
                 <item>
-                    <n>Blocks Found</n>
+                    <name>Blocks Found</name>
+                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.foundBlocks]</key>
                     <delay>300s</delay>
                     <history>90d</history>
@@ -232,11 +265,14 @@
                     <value_type>3</value_type>
                     <description>Total blocks found</description>
                     <applications>
-                        <application><n>HashVault: Mining</n></application>
+                        <application>
+                            <name>HashVault: Mining</name>
+                        </application>
                     </applications>
                 </item>
                 <item>
-                    <n>Current Effort</n>
+                    <name>Current Effort</name>
+                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},collective.currentEffort]</key>
                     <delay>60s</delay>
                     <history>90d</history>
@@ -245,12 +281,14 @@
                     <units>%</units>
                     <description>Current mining effort percentage</description>
                     <applications>
-                        <application><n>HashVault: Mining</n></application>
+                        <application>
+                            <name>HashVault: Mining</name>
+                        </application>
                     </applications>
                 </item>
-                <!-- ==================== REVENUE ==================== -->
                 <item>
-                    <n>Balance: Confirmed (XMR)</n>
+                    <name>Balance: Confirmed (XMR)</name>
+                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},revenue.confirmedBalanceXMR]</key>
                     <delay>300s</delay>
                     <history>90d</history>
@@ -259,11 +297,14 @@
                     <units>XMR</units>
                     <description>Confirmed balance in XMR</description>
                     <applications>
-                        <application><n>HashVault: Revenue</n></application>
+                        <application>
+                            <name>HashVault: Revenue</name>
+                        </application>
                     </applications>
                 </item>
                 <item>
-                    <n>Balance: Confirmed (atomic)</n>
+                    <name>Balance: Confirmed (atomic)</name>
+                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},revenue.confirmedBalance]</key>
                     <delay>300s</delay>
                     <history>90d</history>
@@ -271,11 +312,14 @@
                     <value_type>3</value_type>
                     <description>Confirmed balance in atomic units</description>
                     <applications>
-                        <application><n>HashVault: Revenue</n></application>
+                        <application>
+                            <name>HashVault: Revenue</name>
+                        </application>
                     </applications>
                 </item>
                 <item>
-                    <n>Balance: Unconfirmed Collective</n>
+                    <name>Balance: Unconfirmed Collective</name>
+                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},revenue.unconfirmedBalance.collective.total]</key>
                     <delay>300s</delay>
                     <history>90d</history>
@@ -283,11 +327,14 @@
                     <value_type>3</value_type>
                     <description>Unconfirmed collective balance (atomic)</description>
                     <applications>
-                        <application><n>HashVault: Revenue</n></application>
+                        <application>
+                            <name>HashVault: Revenue</name>
+                        </application>
                     </applications>
                 </item>
                 <item>
-                    <n>Total Paid (XMR)</n>
+                    <name>Total Paid (XMR)</name>
+                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},revenue.totalPaidXMR]</key>
                     <delay>3600s</delay>
                     <history>90d</history>
@@ -296,11 +343,14 @@
                     <units>XMR</units>
                     <description>Total XMR paid out all-time</description>
                     <applications>
-                        <application><n>HashVault: Revenue</n></application>
+                        <application>
+                            <name>HashVault: Revenue</name>
+                        </application>
                     </applications>
                 </item>
                 <item>
-                    <n>Daily Credited (XMR)</n>
+                    <name>Daily Credited (XMR)</name>
+                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},revenue.dailyCreditedXMR]</key>
                     <delay>300s</delay>
                     <history>90d</history>
@@ -309,11 +359,14 @@
                     <units>XMR</units>
                     <description>XMR credited in last 24 hours</description>
                     <applications>
-                        <application><n>HashVault: Revenue</n></application>
+                        <application>
+                            <name>HashVault: Revenue</name>
+                        </application>
                     </applications>
                 </item>
                 <item>
-                    <n>Payout Threshold (XMR)</n>
+                    <name>Payout Threshold (XMR)</name>
+                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},revenue.payoutThresholdXMR]</key>
                     <delay>3600s</delay>
                     <history>90d</history>
@@ -322,11 +375,14 @@
                     <units>XMR</units>
                     <description>Configured payout threshold</description>
                     <applications>
-                        <application><n>HashVault: Revenue</n></application>
+                        <application>
+                            <name>HashVault: Revenue</name>
+                        </application>
                     </applications>
                 </item>
                 <item>
-                    <n>Total Payments Sent</n>
+                    <name>Total Payments Sent</name>
+                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},revenue.totalPaymentsSent]</key>
                     <delay>3600s</delay>
                     <history>90d</history>
@@ -334,11 +390,14 @@
                     <value_type>3</value_type>
                     <description>Number of payouts sent</description>
                     <applications>
-                        <application><n>HashVault: Revenue</n></application>
+                        <application>
+                            <name>HashVault: Revenue</name>
+                        </application>
                     </applications>
                 </item>
                 <item>
-                    <n>Total Rewards Credited</n>
+                    <name>Total Rewards Credited</name>
+                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},revenue.totalRewardsCredited]</key>
                     <delay>3600s</delay>
                     <history>90d</history>
@@ -346,12 +405,14 @@
                     <value_type>3</value_type>
                     <description>Number of rewards credited</description>
                     <applications>
-                        <application><n>HashVault: Revenue</n></application>
+                        <application>
+                            <name>HashVault: Revenue</name>
+                        </application>
                     </applications>
                 </item>
-                <!-- ==================== AUX ==================== -->
                 <item>
-                    <n>Aux: Confirmed Balance (atomic)</n>
+                    <name>Aux: Confirmed Balance (atomic)</name>
+                    <type>0</type>
                     <key>hashvault[{$WALLET_ADDRESS},revenue.auxConfirmedBalance]</key>
                     <delay>300s</delay>
                     <history>90d</history>
@@ -359,47 +420,47 @@
                     <value_type>3</value_type>
                     <description>Merge-mined coin confirmed balance</description>
                     <applications>
-                        <application><n>HashVault: Aux</n></application>
+                        <application>
+                            <name>HashVault: Aux</name>
+                        </application>
                     </applications>
                 </item>
             </items>
-            <!-- ==================== TRIGGERS ==================== -->
             <triggers>
                 <trigger>
                     <expression>{HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.hashRate].last()}=0</expression>
-                    <n>Hashrate is ZERO - all miners down</n>
+                    <name>Hashrate is ZERO - all miners down</name>
                     <priority>4</priority>
                     <description>Current hashrate dropped to zero. All miners may be offline.</description>
                 </trigger>
                 <trigger>
                     <expression>{HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.avg1hashRate].last()}&lt;({HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.avg24hashRate].last()}*(100-{$HASHRATE_WARN_DROP_PCT})/100)</expression>
-                    <n>Hashrate dropped &gt;{$HASHRATE_WARN_DROP_PCT}% vs 24h average</n>
+                    <name>Hashrate dropped more than {$HASHRATE_WARN_DROP_PCT}% vs 24h average</name>
                     <priority>2</priority>
                     <description>1-hour average hashrate has dropped significantly compared to the 24-hour average.</description>
                 </trigger>
                 <trigger>
                     <expression>{HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.staleSharesPct].last()}&gt;{$STALE_SHARES_WARN_PCT}</expression>
-                    <n>Stale shares &gt;{$STALE_SHARES_WARN_PCT}%</n>
+                    <name>Stale shares above {$STALE_SHARES_WARN_PCT}%</name>
                     <priority>2</priority>
                     <description>High stale share rate may indicate network latency issues.</description>
                 </trigger>
                 <trigger>
                     <expression>{HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.invalidShares].last()}&gt;0 and {HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.invalidShares].change()}&gt;0</expression>
-                    <n>Invalid shares increasing</n>
+                    <name>Invalid shares increasing</name>
                     <priority>2</priority>
                     <description>Invalid share count is growing. Check miner configuration.</description>
                 </trigger>
                 <trigger>
                     <expression>(now()-{HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.lastShare].last()}/1000)&gt;{$NO_SHARE_TIMEOUT}</expression>
-                    <n>No shares submitted for &gt;{$NO_SHARE_TIMEOUT}s</n>
+                    <name>No shares submitted for more than {$NO_SHARE_TIMEOUT}s</name>
                     <priority>4</priority>
                     <description>No shares received recently. Miners may be disconnected.</description>
                 </trigger>
             </triggers>
-            <!-- ==================== GRAPHS ==================== -->
             <graphs>
                 <graph>
-                    <n>Hashrate Overview</n>
+                    <name>Hashrate Overview</name>
                     <graph_items>
                         <graph_item>
                             <sortorder>0</sortorder>
@@ -428,7 +489,7 @@
                     </graph_items>
                 </graph>
                 <graph>
-                    <n>Balance vs Payout Threshold (XMR)</n>
+                    <name>Balance vs Payout Threshold (XMR)</name>
                     <graph_items>
                         <graph_item>
                             <sortorder>0</sortorder>
@@ -449,7 +510,7 @@
                     </graph_items>
                 </graph>
                 <graph>
-                    <n>Shares Quality</n>
+                    <name>Shares Quality</name>
                     <graph_items>
                         <graph_item>
                             <sortorder>0</sortorder>
@@ -462,7 +523,7 @@
                     </graph_items>
                 </graph>
                 <graph>
-                    <n>Daily Earnings (XMR)</n>
+                    <name>Daily Earnings (XMR)</name>
                     <graph_items>
                         <graph_item>
                             <sortorder>0</sortorder>
@@ -475,7 +536,7 @@
                     </graph_items>
                 </graph>
                 <graph>
-                    <n>Mining Effort</n>
+                    <name>Mining Effort</name>
                     <graph_items>
                         <graph_item>
                             <sortorder>0</sortorder>
