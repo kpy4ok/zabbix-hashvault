@@ -58,7 +58,7 @@
                     <delay>60s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
-                    <value_type>3</value_type>
+                    <value_type>UNSIGNED</value_type>
                     <units>H/s</units>
                     <description>Current collective hashrate</description>
                     <applications>
@@ -73,7 +73,7 @@
                     <delay>60s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
-                    <value_type>3</value_type>
+                    <value_type>UNSIGNED</value_type>
                     <units>H/s</units>
                     <description>1-hour average hashrate</description>
                     <applications>
@@ -88,7 +88,7 @@
                     <delay>60s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
-                    <value_type>3</value_type>
+                    <value_type>UNSIGNED</value_type>
                     <units>H/s</units>
                     <description>3-hour average hashrate</description>
                     <applications>
@@ -103,7 +103,7 @@
                     <delay>60s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
-                    <value_type>3</value_type>
+                    <value_type>UNSIGNED</value_type>
                     <units>H/s</units>
                     <description>6-hour average hashrate</description>
                     <applications>
@@ -118,7 +118,7 @@
                     <delay>60s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
-                    <value_type>3</value_type>
+                    <value_type>UNSIGNED</value_type>
                     <units>H/s</units>
                     <description>24-hour average hashrate</description>
                     <applications>
@@ -133,7 +133,7 @@
                     <delay>300s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
-                    <value_type>3</value_type>
+                    <value_type>UNSIGNED</value_type>
                     <description>Total valid shares</description>
                     <applications>
                         <application>
@@ -147,7 +147,7 @@
                     <delay>300s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
-                    <value_type>3</value_type>
+                    <value_type>UNSIGNED</value_type>
                     <description>Total invalid shares</description>
                     <applications>
                         <application>
@@ -161,7 +161,7 @@
                     <delay>300s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
-                    <value_type>3</value_type>
+                    <value_type>UNSIGNED</value_type>
                     <description>Total stale shares</description>
                     <applications>
                         <application>
@@ -175,7 +175,7 @@
                     <delay>300s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
-                    <value_type>0</value_type>
+                    <value_type>FLOAT</value_type>
                     <units>%</units>
                     <description>Stale shares as percentage of valid shares</description>
                     <applications>
@@ -190,7 +190,7 @@
                     <delay>60s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
-                    <value_type>0</value_type>
+                    <value_type>FLOAT</value_type>
                     <description>Shares submitted per 30 seconds</description>
                     <applications>
                         <application>
@@ -204,7 +204,7 @@
                     <delay>60s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
-                    <value_type>3</value_type>
+                    <value_type>UNSIGNED</value_type>
                     <units>unixtime</units>
                     <description>Timestamp of last share (ms since epoch)</description>
                     <applications>
@@ -219,7 +219,7 @@
                     <delay>300s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
-                    <value_type>3</value_type>
+                    <value_type>UNSIGNED</value_type>
                     <description>Hashes in current round</description>
                     <applications>
                         <application>
@@ -233,7 +233,7 @@
                     <delay>300s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
-                    <value_type>3</value_type>
+                    <value_type>UNSIGNED</value_type>
                     <description>Total hashes submitted all-time</description>
                     <applications>
                         <application>
@@ -247,7 +247,7 @@
                     <delay>300s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
-                    <value_type>3</value_type>
+                    <value_type>UNSIGNED</value_type>
                     <description>Total blocks found</description>
                     <applications>
                         <application>
@@ -261,7 +261,7 @@
                     <delay>60s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
-                    <value_type>0</value_type>
+                    <value_type>FLOAT</value_type>
                     <units>%</units>
                     <description>Current mining effort percentage</description>
                     <applications>
@@ -276,7 +276,7 @@
                     <delay>300s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
-                    <value_type>0</value_type>
+                    <value_type>FLOAT</value_type>
                     <units>XMR</units>
                     <description>Confirmed balance in XMR</description>
                     <applications>
@@ -291,7 +291,7 @@
                     <delay>300s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
-                    <value_type>3</value_type>
+                    <value_type>UNSIGNED</value_type>
                     <description>Confirmed balance in atomic units</description>
                     <applications>
                         <application>
@@ -305,7 +305,7 @@
                     <delay>300s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
-                    <value_type>3</value_type>
+                    <value_type>UNSIGNED</value_type>
                     <description>Unconfirmed collective balance (atomic)</description>
                     <applications>
                         <application>
@@ -319,7 +319,7 @@
                     <delay>3600s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
-                    <value_type>0</value_type>
+                    <value_type>FLOAT</value_type>
                     <units>XMR</units>
                     <description>Total XMR paid out all-time</description>
                     <applications>
@@ -334,7 +334,7 @@
                     <delay>300s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
-                    <value_type>0</value_type>
+                    <value_type>FLOAT</value_type>
                     <units>XMR</units>
                     <description>XMR credited in last 24 hours</description>
                     <applications>
@@ -349,7 +349,7 @@
                     <delay>3600s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
-                    <value_type>0</value_type>
+                    <value_type>FLOAT</value_type>
                     <units>XMR</units>
                     <description>Configured payout threshold</description>
                     <applications>
@@ -364,7 +364,7 @@
                     <delay>3600s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
-                    <value_type>3</value_type>
+                    <value_type>UNSIGNED</value_type>
                     <description>Number of payouts sent</description>
                     <applications>
                         <application>
@@ -378,7 +378,7 @@
                     <delay>3600s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
-                    <value_type>3</value_type>
+                    <value_type>UNSIGNED</value_type>
                     <description>Number of rewards credited</description>
                     <applications>
                         <application>
@@ -392,7 +392,7 @@
                     <delay>300s</delay>
                     <history>90d</history>
                     <trends>365d</trends>
-                    <value_type>3</value_type>
+                    <value_type>UNSIGNED</value_type>
                     <description>Merge-mined coin confirmed balance</description>
                     <applications>
                         <application>
@@ -407,31 +407,31 @@
         <trigger>
             <expression>{HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.hashRate].last()}=0</expression>
             <name>Hashrate is ZERO - all miners down</name>
-            <priority>4</priority>
+            <priority>HIGH</priority>
             <description>Current hashrate dropped to zero. All miners may be offline.</description>
         </trigger>
         <trigger>
             <expression>{HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.avg1hashRate].last()}&lt;({HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.avg24hashRate].last()}*(100-{$HASHRATE_WARN_DROP_PCT})/100)</expression>
             <name>Hashrate dropped more than {$HASHRATE_WARN_DROP_PCT}% vs 24h average</name>
-            <priority>2</priority>
+            <priority>WARNING</priority>
             <description>1-hour average hashrate has dropped significantly compared to the 24-hour average.</description>
         </trigger>
         <trigger>
             <expression>{HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.staleSharesPct].last()}&gt;{$STALE_SHARES_WARN_PCT}</expression>
             <name>Stale shares above {$STALE_SHARES_WARN_PCT}%</name>
-            <priority>2</priority>
+            <priority>WARNING</priority>
             <description>High stale share rate may indicate network latency issues.</description>
         </trigger>
         <trigger>
             <expression>{HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.invalidShares].last()}&gt;0 and {HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.invalidShares].change()}&gt;0</expression>
             <name>Invalid shares increasing</name>
-            <priority>2</priority>
+            <priority>WARNING</priority>
             <description>Invalid share count is growing. Check miner configuration.</description>
         </trigger>
         <trigger>
             <expression>(now()-{HashVault Mining Pool:hashvault[{$WALLET_ADDRESS},collective.lastShare].last()}/1000)&gt;{$NO_SHARE_TIMEOUT}</expression>
             <name>No shares submitted for more than {$NO_SHARE_TIMEOUT}s</name>
-            <priority>4</priority>
+            <priority>HIGH</priority>
             <description>No shares received recently. Miners may be disconnected.</description>
         </trigger>
     </triggers>
